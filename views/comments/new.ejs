@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    table {
+        background-color: rgb(216, 219, 23);
+        border-collapse: collapse;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD USER</title>
+</head>
+
+<body>
+    <h1>ADD NEW USER</h1>
+    <form action="/comments" method="POST">
+        <table border="2px solid black">
+            <tr>
+                <td>
+                    <label for="username">Enter username:</label>
+                    <input type="text" id="username" placeholder="username" name="username">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Enter Password:</label>
+                    <input type="password" id="username" placeholder="password" name="password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="comment">Enter Name:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="text" name="comment" id="comment" placeholder="name">
+                </td>
+            </tr>
+            <tr>
+                <td align="center"> <button>Submit</button></td>
+            </tr>
+        </table>
+    </form>
+
+    <a href="/comments">Back to index</a>
+
+</body>
+
+</html>

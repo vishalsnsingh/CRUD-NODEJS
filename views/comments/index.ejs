@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USERS</title>
+    <style>
+        table {
+            background-color: rgb(216, 219, 23);
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <h1> USERS DATA</h1>
+    <table border="2px solid black">
+        <% for(let c of comments) {%>
+            <tr>
+                <td>
+                    <%= c.comment %> -<b>
+                            <%= c.username %>
+                        </b>
+                        <a href="/comments/<%= c.id %> ">details</a>
+
+                </td>
+            </tr>
+
+            <% } %>
+    </table>
+    <a href="/comments/new">New USER</a>
+
+</body>
+
+</html>
